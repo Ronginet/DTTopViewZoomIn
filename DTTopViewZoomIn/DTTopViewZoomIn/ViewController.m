@@ -2,11 +2,11 @@
 //  ViewController.m
 //  DTTopViewZoomIn
 //
-//  Created by Jack's Apple on 2016/12/6.
 //  Copyright © 2016年 dtlr. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "HeaderViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)RightBarBtn:(id)sender {
+    
+    HeaderViewController *headerVC = [[HeaderViewController alloc]init];
+    [self.navigationController pushViewController:headerVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

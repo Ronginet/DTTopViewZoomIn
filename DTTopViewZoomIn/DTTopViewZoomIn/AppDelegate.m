@@ -2,11 +2,11 @@
 //  AppDelegate.m
 //  DTTopViewZoomIn
 //
-//  Created by Jack's Apple on 2016/12/6.
 //  Copyright © 2016年 dtlr. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "AFNetworkActivityIndicatorManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 显示网络指示器
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     return YES;
 }
 

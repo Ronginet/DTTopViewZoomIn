@@ -2,7 +2,6 @@
 //  DTTopViewZoomInUITests.m
 //  DTTopViewZoomInUITests
 //
-//  Created by Jack's Apple on 2016/12/6.
 //  Copyright © 2016年 dtlr. All rights reserved.
 //
 
