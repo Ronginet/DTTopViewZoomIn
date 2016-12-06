@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E59FB76A1DF6C18D00C8544E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E59FB7691DF6C18D00C8544E /* main.m */; };
+		E59FB76D1DF6C18D00C8544E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59FB76C1DF6C18D00C8544E /* AppDelegate.m */; };
+		E59FB7701DF6C18D00C8544E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59FB76F1DF6C18D00C8544E /* ViewController.m */; };
+		E59FB7731DF6C18D00C8544E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59FB7711DF6C18D00C8544E /* Main.storyboard */; };
+		E59FB7751DF6C18D00C8544E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59FB7741DF6C18D00C8544E /* Assets.xcassets */; };
+		E59FB7781DF6C18D00C8544E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59FB7761DF6C18D00C8544E /* LaunchScreen.storyboard */; };
+		E59FB7831DF6C18D00C8544E /* DTTopViewZoomInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E59FB7821DF6C18D00C8544E /* DTTopViewZoomInTests.m */; };
+		E59FB78E1DF6C18D00C8544E /* DTTopViewZoomInUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E59FB78D1DF6C18D00C8544E /* DTTopViewZoomInUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E59FB77F1DF6C18D00C8544E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E59FB75D1DF6C18D00C8544E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E59FB7641DF6C18D00C8544E;
+			remoteInfo = DTTopViewZoomIn;
+		};
+		E59FB78A1DF6C18D00C8544E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E59FB75D1DF6C18D00C8544E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E59FB7641DF6C18D00C8544E;
+			remoteInfo = DTTopViewZoomIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E59FB7651DF6C18D00C8544E /* DTTopViewZoomIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTTopViewZoomIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59FB7691DF6C18D00C8544E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E59FB76B1DF6C18D00C8544E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E59FB76C1DF6C18D00C8544E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E59FB76E1DF6C18D00C8544E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E59FB76F1DF6C18D00C8544E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E59FB7721DF6C18D00C8544E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E59FB7741DF6C18D00C8544E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E59FB7771DF6C18D00C8544E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E59FB7791DF6C18D00C8544E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59FB77E1DF6C18D00C8544E /* DTTopViewZoomInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTTopViewZoomInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59FB7821DF6C18D00C8544E /* DTTopViewZoomInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTopViewZoomInTests.m; sourceTree = "<group>"; };
+		E59FB7841DF6C18D00C8544E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59FB7891DF6C18D00C8544E /* DTTopViewZoomInUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTTopViewZoomInUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59FB78D1DF6C18D00C8544E /* DTTopViewZoomInUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTopViewZoomInUITests.m; sourceTree = "<group>"; };
+		E59FB78F1DF6C18D00C8544E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E59FB7621DF6C18D00C8544E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59FB77B1DF6C18D00C8544E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59FB7861DF6C18D00C8544E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E59FB75C1DF6C18D00C8544E = {
+			isa = PBXGroup;
+			children = (
+				E59FB7671DF6C18D00C8544E /* DTTopViewZoomIn */,
+				E59FB7811DF6C18D00C8544E /* DTTopViewZoomInTests */,
+				E59FB78C1DF6C18D00C8544E /* DTTopViewZoomInUITests */,
+				E59FB7661DF6C18D00C8544E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E59FB7661DF6C18D00C8544E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E59FB7651DF6C18D00C8544E /* DTTopViewZoomIn.app */,
+				E59FB77E1DF6C18D00C8544E /* DTTopViewZoomInTests.xctest */,
+				E59FB7891DF6C18D00C8544E /* DTTopViewZoomInUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E59FB7671DF6C18D00C8544E /* DTTopViewZoomIn */ = {
+			isa = PBXGroup;
+			children = (
+				E59FB76B1DF6C18D00C8544E /* AppDelegate.h */,
+				E59FB76C1DF6C18D00C8544E /* AppDelegate.m */,
+				E59FB76E1DF6C18D00C8544E /* ViewController.h */,
+				E59FB76F1DF6C18D00C8544E /* ViewController.m */,
+				E59FB7711DF6C18D00C8544E /* Main.storyboard */,
+				E59FB7741DF6C18D00C8544E /* Assets.xcassets */,
+				E59FB7761DF6C18D00C8544E /* LaunchScreen.storyboard */,
+				E59FB7791DF6C18D00C8544E /* Info.plist */,
+				E59FB7681DF6C18D00C8544E /* Supporting Files */,
+			);
+			path = DTTopViewZoomIn;
+			sourceTree = "<group>";
+		};
+		E59FB7681DF6C18D00C8544E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E59FB7691DF6C18D00C8544E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E59FB7811DF6C18D00C8544E /* DTTopViewZoomInTests */ = {
+			isa = PBXGroup;
+			children = (
+				E59FB7821DF6C18D00C8544E /* DTTopViewZoomInTests.m */,
+				E59FB7841DF6C18D00C8544E /* Info.plist */,
+			);
+			path = DTTopViewZoomInTests;
+			sourceTree = "<group>";
+		};
+		E59FB78C1DF6C18D00C8544E /* DTTopViewZoomInUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E59FB78D1DF6C18D00C8544E /* DTTopViewZoomInUITests.m */,
+				E59FB78F1DF6C18D00C8544E /* Info.plist */,
+			);
+			path = DTTopViewZoomInUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E59FB7641DF6C18D00C8544E /* DTTopViewZoomIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59FB7921DF6C18D00C8544E /* Build configuration list for PBXNativeTarget "DTTopViewZoomIn" */;
+			buildPhases = (
+				E59FB7611DF6C18D00C8544E /* Sources */,
+				E59FB7621DF6C18D00C8544E /* Frameworks */,
+				E59FB7631DF6C18D00C8544E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTTopViewZoomIn;
+			productName = DTTopViewZoomIn;
+			productReference = E59FB7651DF6C18D00C8544E /* DTTopViewZoomIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E59FB77D1DF6C18D00C8544E /* DTTopViewZoomInTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59FB7951DF6C18D00C8544E /* Build configuration list for PBXNativeTarget "DTTopViewZoomInTests" */;
+			buildPhases = (
+				E59FB77A1DF6C18D00C8544E /* Sources */,
+				E59FB77B1DF6C18D00C8544E /* Frameworks */,
+				E59FB77C1DF6C18D00C8544E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E59FB7801DF6C18D00C8544E /* PBXTargetDependency */,
+			);
+			name = DTTopViewZoomInTests;
+			productName = DTTopViewZoomInTests;
+			productReference = E59FB77E1DF6C18D00C8544E /* DTTopViewZoomInTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E59FB7881DF6C18D00C8544E /* DTTopViewZoomInUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59FB7981DF6C18D00C8544E /* Build configuration list for PBXNativeTarget "DTTopViewZoomInUITests" */;
+			buildPhases = (
+				E59FB7851DF6C18D00C8544E /* Sources */,
+				E59FB7861DF6C18D00C8544E /* Frameworks */,
+				E59FB7871DF6C18D00C8544E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E59FB78B1DF6C18D00C8544E /* PBXTargetDependency */,
+			);
+			name = DTTopViewZoomInUITests;
+			productName = DTTopViewZoomInUITests;
+			productReference = E59FB7891DF6C18D00C8544E /* DTTopViewZoomInUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E59FB75D1DF6C18D00C8544E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dtlr;
+				TargetAttributes = {
+					E59FB7641DF6C18D00C8544E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					E59FB77D1DF6C18D00C8544E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E59FB7641DF6C18D00C8544E;
+					};
+					E59FB7881DF6C18D00C8544E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E59FB7641DF6C18D00C8544E;
+					};
+				};
+			};
+			buildConfigurationList = E59FB7601DF6C18D00C8544E /* Build configuration list for PBXProject "DTTopViewZoomIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E59FB75C1DF6C18D00C8544E;
+			productRefGroup = E59FB7661DF6C18D00C8544E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E59FB7641DF6C18D00C8544E /* DTTopViewZoomIn */,
+				E59FB77D1DF6C18D00C8544E /* DTTopViewZoomInTests */,
+				E59FB7881DF6C18D00C8544E /* DTTopViewZoomInUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E59FB7631DF6C18D00C8544E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59FB7781DF6C18D00C8544E /* LaunchScreen.storyboard in Resources */,
+				E59FB7751DF6C18D00C8544E /* Assets.xcassets in Resources */,
+				E59FB7731DF6C18D00C8544E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59FB77C1DF6C18D00C8544E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59FB7871DF6C18D00C8544E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E59FB7611DF6C18D00C8544E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59FB7701DF6C18D00C8544E /* ViewController.m in Sources */,
+				E59FB76D1DF6C18D00C8544E /* AppDelegate.m in Sources */,
+				E59FB76A1DF6C18D00C8544E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59FB77A1DF6C18D00C8544E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59FB7831DF6C18D00C8544E /* DTTopViewZoomInTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59FB7851DF6C18D00C8544E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59FB78E1DF6C18D00C8544E /* DTTopViewZoomInUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E59FB7801DF6C18D00C8544E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E59FB7641DF6C18D00C8544E /* DTTopViewZoomIn */;
+			targetProxy = E59FB77F1DF6C18D00C8544E /* PBXContainerItemProxy */;
+		};
+		E59FB78B1DF6C18D00C8544E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E59FB7641DF6C18D00C8544E /* DTTopViewZoomIn */;
+			targetProxy = E59FB78A1DF6C18D00C8544E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E59FB7711DF6C18D00C8544E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E59FB7721DF6C18D00C8544E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E59FB7761DF6C18D00C8544E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E59FB7771DF6C18D00C8544E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E59FB7901DF6C18D00C8544E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E59FB7911DF6C18D00C8544E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E59FB7931DF6C18D00C8544E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DTTopViewZoomIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtlr.DTTopViewZoomIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E59FB7941DF6C18D00C8544E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DTTopViewZoomIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dtlr.DTTopViewZoomIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E59FB7961DF6C18D00C8544E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DTTopViewZoomInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.delr.DTTopViewZoomInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DTTopViewZoomIn.app/DTTopViewZoomIn";
+			};
+			name = Debug;
+		};
+		E59FB7971DF6C18D00C8544E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DTTopViewZoomInTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.delr.DTTopViewZoomInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DTTopViewZoomIn.app/DTTopViewZoomIn";
+			};
+			name = Release;
+		};
+		E59FB7991DF6C18D00C8544E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DTTopViewZoomInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.delr.DTTopViewZoomInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DTTopViewZoomIn;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E59FB79A1DF6C18D00C8544E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DTTopViewZoomInUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.delr.DTTopViewZoomInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DTTopViewZoomIn;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E59FB7601DF6C18D00C8544E /* Build configuration list for PBXProject "DTTopViewZoomIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59FB7901DF6C18D00C8544E /* Debug */,
+				E59FB7911DF6C18D00C8544E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E59FB7921DF6C18D00C8544E /* Build configuration list for PBXNativeTarget "DTTopViewZoomIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59FB7931DF6C18D00C8544E /* Debug */,
+				E59FB7941DF6C18D00C8544E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E59FB7951DF6C18D00C8544E /* Build configuration list for PBXNativeTarget "DTTopViewZoomInTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59FB7961DF6C18D00C8544E /* Debug */,
+				E59FB7971DF6C18D00C8544E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E59FB7981DF6C18D00C8544E /* Build configuration list for PBXNativeTarget "DTTopViewZoomInUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59FB7991DF6C18D00C8544E /* Debug */,
+				E59FB79A1DF6C18D00C8544E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E59FB75D1DF6C18D00C8544E /* Project object */;
+}
