@@ -31,38 +31,38 @@ NSString *const cellId = @"cell_id";
     
     self.view.backgroundColor = [UIColor whiteColor];
     _statusBarStyle = UIStatusBarStyleLightContent;
-    [self setupTableView];
+    [self createTableView];
     [self setupHeaderView];
     [self setupBackBtn];
 }
 
--(void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    // 取消自动调整滚动视图间距 - ViewController + Nav 会自动调整TableView的ContentInset
+    // 取消自动调整滚动视图间距 - ViewController + Nav会自动调整TableView的ContentInset
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
     // 隐藏导航栏
     [self.navigationController setNavigationBarHidden:YES];
 }
 
--(void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
+- (UIStatusBarStyle)preferredStatusBarStyle {
     return _statusBarStyle;
 }
 
 // 初始化头部视图
--(void)setupHeaderView{
-    _headerView = [[UIView alloc]init];
+- (void)setupHeaderView {
+    _headerView = [[UIView alloc] init];
     _headerView.frame = CGRectMake(0, 0, self.view.frame.size.width, kHeaderViewHeight);
     _headerView.backgroundColor = [UIColor dt_colorWithHex:0xF8F8F8];
     [self.view addSubview:_headerView];
     
-    _imageView = [[UIImageView alloc]initWithFrame:_headerView.bounds];
+    _imageView = [[UIImageView alloc] initWithFrame:_headerView.bounds];
     _imageView.backgroundColor = [UIColor dt_colorWithHex:0x000033];
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
     _imageView.clipsToBounds = YES;
@@ -81,10 +81,9 @@ NSString *const cellId = @"cell_id";
     CGFloat lineViewH = 1 - [UIScreen mainScreen].scale;
     _lineView.frame = CGRectMake(0, kHeaderViewHeight - lineViewH, _headerView.frame.size.width, lineViewH);
     [_headerView addSubview:_lineView];
-    
 }
 
-- (void)setupBackBtn{
+- (void)setupBackBtn {
     UIButton *backBtn = [[UIButton alloc]init];
     backBtn.frame = CGRectMake(5, 20, 50, 30);
     [backBtn setTitle:@"返回" forState:UIControlStateNormal];
@@ -94,9 +93,8 @@ NSString *const cellId = @"cell_id";
 }
 
 // 准备表格视图
--(void)setupTableView{
-    
-    UITableView *tableView = [[UITableView alloc]init];
+- (void)createTableView {
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView.frame = self.view.bounds;
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -106,28 +104,37 @@ NSString *const cellId = @"cell_id";
     tableView.scrollIndicatorInsets = tableView.contentInset;
 }
 
+- (void)dealloc{
+    NSLog(@"Line = %d,dealloc",__LINE__);
+}
+
+#pragma mark - Private
+
+- (void)backBtnClicked:(UIButton *)btn {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - UITableViewDataSource,UITableViewDelegate
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1000;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     cell.textLabel.text = @(indexPath.row).stringValue;
     return cell;
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat offset = scrollView.contentOffset.y + scrollView.contentInset.top;
-    
     // 向下滚动，放大
     if (offset <= 0) {
         _headerView.y = 0;
         _headerView.height = kHeaderViewHeight - offset;
         _imageView.alpha = 1.0;
-        
     } else {  // 向上滚动，整体图像平移
         _headerView.height = kHeaderViewHeight;
         CGFloat min = kHeaderViewHeight - 64;
@@ -143,20 +150,6 @@ NSString *const cellId = @"cell_id";
     
     _imageView.height = _headerView.height;
     _lineView.y = _headerView.height;
-}
-
-- (void)backBtnClicked:(UIButton *)btn{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)dealloc{
-    NSLog(@"Line = %d,dealloc",__LINE__);
 }
 
 @end

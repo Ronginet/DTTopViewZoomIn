@@ -8,5 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (Extension)
+
 + (instancetype)dt_colorWithHex:(uint32_t)hex;
+
 @end
